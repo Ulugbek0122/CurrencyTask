@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.CurrencyTask.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.CurrencyTask.AppWidgetContainer">
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_flag"
+                android:src="@drawable/brazil"
+                android:layout_width="50dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/name_state"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_toRightOf="@id/image_flag"
+                android:text="USD" />
+
+            <TextView
+                android:text="Курс ЦБ"
+                android:textSize="12sp"
+                android:layout_above="@id/currency_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/currency_text"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:text="11 553,06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:text="Покупка"
+                android:textSize="12sp"
+                android:layout_above="@id/currency_text_oluv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/currency_text_oluv"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:text="11553,06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:text="Продажа"
+                android:textSize="12sp"
+                android:layout_above="@id/currency_text_sotuv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/currency_text_sotuv"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:text="11553,06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

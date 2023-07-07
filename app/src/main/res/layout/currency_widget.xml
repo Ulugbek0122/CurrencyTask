@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.CurrencyTask.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.CurrencyTask.AppWidgetContainer">
+
+
+   <ListView
+       tools:listitem="@layout/currency_widget_item"
+       android:id="@+id/currency_widget_stack_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+</FrameLayout>
