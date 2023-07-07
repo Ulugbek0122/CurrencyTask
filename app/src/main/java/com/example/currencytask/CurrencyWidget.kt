@@ -1,5 +1,6 @@
 package com.example.currencytask
 
+import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
@@ -18,7 +19,13 @@ class CurrencyWidget : AppWidgetProvider() {
     ) {
         for (appWidgetId in appWidgetIds!!) {
 
-            var intent = Intent()
+            var intent = Intent(context,MainActivity::class.java)
+            var pendingIntent = PendingIntent.getActivity(
+                context,
+                0,
+                intent,
+                PendingIntent.FLAG_IMMUTABLE
+            )
 
             var serviceIntent = Intent(context, ExampleWidgetService::class.java)
             serviceIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)

@@ -8,12 +8,14 @@ import android.widget.RemoteViewsService
 import com.example.currencytask.R
 import com.example.currencytask.data.remote.response.CurrencyResponse
 import com.example.currencytask.repository.CurrencyRepository
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class ExampleWidgetService @Inject constructor(
     private val repository: CurrencyRepository
 ): RemoteViewsService() {
